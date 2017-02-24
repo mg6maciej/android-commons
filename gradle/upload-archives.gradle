@@ -26,7 +26,7 @@ if (isCI() && isOnMasterBranch()) {
 
     task sourcesJar(type: Jar) {
         classifier = 'sources'
-        from android.sourceSets.main.java.sourceFiles
+        from android.sourceSets.main.java.srcDirs
     }
 
     artifacts {
